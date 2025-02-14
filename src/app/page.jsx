@@ -11,7 +11,7 @@ export default  async function Home() {
       <div className="flex gap-4 overflow-hidden items-center">
       {anime.data.map(data => {
         return (
-          <div key={data.mal_id} className="shadow=xl">
+          <div key={data.mal_id} className="flex border border-black rounded-xl shadow=xl">
           <AnimeList title={data.title} images={data.images.webp.image_url} id={data.mal_id}/>
         </div>
         )
